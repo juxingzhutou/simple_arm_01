@@ -20,10 +20,13 @@
   <node name="arm_mover" type="arm_mover" pkg="simple_arm">
     <rosparam>
       min_joint_1_angle: 0
-      max_joint_1_angle: 1.57
+      max_joint_1_angle: 3
       min_joint_2_angle: 0
-      max_joint_2_angle: 1.0
+      max_joint_2_angle: 3.0
     </rosparam>
   </node>
+
+  <!-- The look away node -->
+  <node name="look_away" type="look_away" pkg="simple_arm"/>
 
 </launch>
